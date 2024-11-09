@@ -1,0 +1,119 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-image: url('/Project1/Images/Background_Image.jpg');
+ /* Path to your image */
+    background-size: cover; /* Ensure the image covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Background stays fixed on scroll */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: rgba(226, 55, 68, 0.8); /* Zomato's red color with slight transparency */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img {
+    height: 50px;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header ul li {
+    display: inline;
+  }
+  
+  header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header ul li a:hover {
+    color: #ffccd2; /* Lighter red/pink on hover */
+  }
+  
+  /* Main Styles */
+  main {
+    text-align: center;
+    margin: 20px 0;
+    flex-grow: 1;
+    backdrop-filter: blur(5px); /* Adds a blur effect for better readability */
+  }
+  
+  main img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+  
+  main p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight white background for better text visibility */
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  main input {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #e23744;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  main input:focus {
+    border: 2px solid #b71c1c; /* Darker red on focus */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #b71c1c; /* Darker red for footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    main input {
+      width: 80%;
+    }
+  
+    header ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

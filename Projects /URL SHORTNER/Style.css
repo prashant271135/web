@@ -1,0 +1,18 @@
+/* Generic CCS Added */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section  */
+header, #logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo{
+
+    text-align: center;
+}

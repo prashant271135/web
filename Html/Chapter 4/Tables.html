@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* General table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header styling */
+table thead {
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+}
+
+table thead th {
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+/* Table body styling */
+table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tbody td {
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+/* Table footer styling */
+table tfoot {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+table tfoot td {
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tbody tr {
+        margin-bottom: 15px;
+    }
+
+    table tbody td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+    </style>
+    <title>Tables in HTML</title>
+  </head>
+  <body>
+    <h1>Tables in HTML( Hypwe Text Markup Language )</h1>
+
+    <!-- Table Tag   -->
+    <table>
+      <!-- Table Head  -->
+      <thead>
+
+        <!-- Row of the Table Head  -->
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Salry</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+
+        <tr>
+            <td>Digvijay</td>
+            <td>Senior Software Engineer</td>
+            <td>$10000000000</td>
+        </tr>
+        <tr>
+            <td>Vineet Balak </td>
+            <td> Jeeb Katra</td>
+            <td> 100/Day </td>
+        </tr>
+        <tr>
+            <td>Prashant Khiwal</td>
+            <td>Software Engineer</td>
+            <td>Not Defined</td>
+        </tr>
+
+        <tr>
+            <td  colspan="2">Thank</td>
+            <td>Your</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

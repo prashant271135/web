@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Foam</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input Styles */
+form div {
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Checkbox and Label */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h3>Registration Foam</h3>
+
+    <form>
+        <div>
+            <input type="text" placeholder="Enter Your First Name" name="fname">
+            <input type="text" placeholder="Enter Your Second Name" name="lname">
+        </div>
+        <div>
+            <label for="gender"> Please Select gender</label>
+            <select name="" id="gender ">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="o">Others</option>
+            </select>
+        </div>
+        <div>
+            Do You Agree all Terms and Conditions?
+            <input type="checkbox" id="tac">
+            <label for="tac">Yes, I agree</label>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+</html>

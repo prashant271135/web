@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Body and Form styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d0d;
+    color: #00ff00;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #00ff00;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* Form container styling */
+form {
+    width: 300px;
+    padding: 20px;
+    background-color: #111111;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Form inputs and select dropdown */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #222;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Input and button glow effect */
+input:focus, select:focus, button:hover {
+    outline: none;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Submit button styling */
+button {
+    background-color: #111111;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #111111;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Label styling */
+label {
+    margin-left: 5px;
+}
+
+/* Additional styling for form elements */
+div {
+    margin-bottom: 15px;
+}
+
+/* Glowing hover effect for labels */
+label:hover {
+    text-shadow: 0 0 10px #00ff00;
+}
+
+    </style>
+    <title>Html Foams</title>
+</head>
+<body>
+
+    <h1>Foams In HTML</h1>
+
+    <form action="/submit.php">
+
+        <div>
+            <label for="Name" >Name</label>
+            <input id="Name" type="text" placeholder="Enter Name">
+        </div>
+
+        <div>
+            <label for="Phone"> Phone Number</label>
+            <input id="Phone" type="tel" placeholder="Enter Phone Number">
+        </div>
+
+        <div>
+            <label for="Gen">Genter</label>
+            <select id="Gen" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+
+            </select>
+        </div>
+
+        <div>
+            <input if="Click" type="checkbox"  required>
+            <label for="Click"> Check the Tick Box</label>
+        </div>
+
+        ,<div>
+            ,<button inputmode="submit">Submit</button>
+        </div>
+
+
+    </form>
+    
+</body>
+</html>
